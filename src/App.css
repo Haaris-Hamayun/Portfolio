@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background: #333;
+  color: white;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+}
+
+.header nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.header button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* .section {
+  min-height: 100vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} */
+
+.footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+}

@@ -1,0 +1,85 @@
+.header {
+    width: 100%;
+    padding: 1rem calc(2rem + 16px) 1rem 2rem; /* Extra right padding for scrollbar */
+    background-color: #000; /* Black background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    height: 80px;
+    box-sizing: border-box; /* Ensures padding is included in width */
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff; /* White text for Portfolio */
+  }
+  
+  .logo span {
+    color: white;       /* Red color for the dot (if you want just the dot red) */
+     
+   
+  }
+  
+  /* If you want entire "Portfolio" text red, use this instead:
+  .logo {
+    color: #ff0000;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  */
+  
+  .nav-buttons {
+    display: flex;
+    gap: 1rem;
+    padding-right: 8px; /* Additional safety padding */
+  }
+  
+  .nav-buttons button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    color: #fff; /* White text for buttons */
+    transition: all 0.3s ease;
+    white-space: nowrap; /* Prevents text wrapping */
+  }
+  
+  .nav-buttons button:hover {
+    color: #ff0000; /* Red color on hover */
+  }
+  
+  /* Specific styling for the contact button */
+  .contact-button {
+    margin-right: 8px; /* Extra margin to prevent touching scrollbar */
+  }
+  
+  /* Optional underline animation on hover */
+  .nav-buttons button {
+    position: relative;
+  }
+  
+  .nav-buttons button::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ff0000;
+    transition: width 0.3s ease;
+  }
+  
+  .nav-buttons button:hover::after {
+    width: 100%;
+  }

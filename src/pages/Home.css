@@ -1,0 +1,87 @@
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10%;
+  background: #000; /* Black background */
+  color: #fff; /* White text for all content */
+}
+
+.home-content {
+  max-width: 600px;
+}
+
+.home-image {
+  width: 400px;
+  height: 380px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 10px solid #ff0000; /* Red border */
+  box-shadow: 0 10px 30px rgba(255, 0, 0, 0.3); /* Red shadow */
+}
+
+.home h3 {
+  font-size: 1.5rem;
+  color: #fff; /* White text */
+  margin-bottom: 0.5rem;
+}
+
+.home h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #fff; /* White text */
+  margin-bottom: 0.5rem;
+}
+
+.home h2 {
+  font-size: 2.5rem;
+  color: #fff; /* White text */
+  margin-bottom: 2rem;
+}
+
+.highlight {
+  color: #ff0000; /* Red color for the animated text */
+  min-height: 2.5rem;
+  display: inline-block;
+}
+
+.typing-cursor {
+  color: #ff0000; /* Red cursor */
+  animation: blink 1s infinite;
+  margin-left: 2px;
+}
+
+.hire-me-btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: #ff0000; /* Red button */
+  color: #fff;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hire-me-btn:hover {
+  background: #cc0000; /* Darker red on hover */
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(255, 0, 0, 0.3); /* Red shadow */
+}
+
+/* Animations */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.highlight {
+  animation: fadeIn 0.5s ease;
+}
