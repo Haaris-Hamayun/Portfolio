@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './About.css';
-import profileImage from './images/FB_IMG_1659867063155.jpg';
+import profileImage from './images/IMG-20250131-WA0028_1.jpg';
+
+
 
 export default function About() {
   const [role, setRole] = useState('');
