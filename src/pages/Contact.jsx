@@ -2,7 +2,7 @@
 import React from 'react';
 import './Contact.css';
 import { motion } from 'framer-motion';
-import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin } from 'react-icons/fa';
+import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const iconVariant = {
   hidden: { opacity: 0, scale: 0.5 },
@@ -50,9 +50,10 @@ const Contact = () => {
             <div className="contact-details">
               {[
                 { icon: FaMapMarkerAlt, label: 'Address', value: 'Lahore, Pakistan' },
-                { icon: FaEnvelope, label: 'Email', value: 'devghufran78@gmail.com' },
-                { icon: FaPhone, label: 'Phone No', value: '+92 324 4562896' },
-                { icon: FaLinkedin, label: 'LinkedIn', value: 'Connect with me', link: 'https://linkedin.com/in/yourprofile' }
+                { icon: FaEnvelope, label: 'Email', value: 'haris1122hamayun@gmail.com' },
+                { icon: FaPhone, label: 'Phone No', value: '+92 301 4343828' },
+                { icon: FaLinkedin, label: 'LinkedIn', value: 'Connect with me', link: 'https://www.linkedin.com/in/haris-hamayun/' },
+                { icon: FaGithub, label: 'GitHub', value: 'View my projects', link: 'https://github.com/Haaris-Hamayun' }
               ].map((item, idx) => {
                 const Icon = item.icon;
                 return (
