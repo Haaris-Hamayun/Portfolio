@@ -33,6 +33,13 @@ export default function Home() {
     return () => clearTimeout(timer);
   }, [role, isDeleting, loopNum]);
 
+  const handleScrollDown = () => {
+    window.scrollBy({
+      top: 500, // Scrolls down by 500 pixels
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <section className="home" id="home">
       <div className="home-content">
@@ -41,7 +48,9 @@ export default function Home() {
         <h2>And I'm a <span className="highlight">{role}</span>
           <span className="typing-cursor">|</span>
         </h2>
-        <button className="hire-me-btn">Hire Me</button>
+        <button className="hire-me-btn" onClick={handleScrollDown}>
+          Hire Me
+        </button>
       </div>
       <img 
         src={profileImage} 
